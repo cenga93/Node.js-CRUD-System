@@ -1,0 +1,46 @@
+/* 
+  * custom style
+  * author: { MILAN MILIC } 
+*/
+
+// VARIABLES
+$blue: #4686da;
+$white: #fff;
+$white-light: #e2e2e2;
+
+// start::Header
+.navbar {
+  background-color: $blue;
+
+  &__logo {
+    color: $white;
+
+    &:hover {
+      color: $white-light;
+    }
+  }
+}
+// end::Header
+
+// start:Table
+.table {
+  td,
+  th {
+    vertical-align: middle;
+  }
+}
+// end::Table
+
+// start::Add User / Edit user
+.add-user,
+.edit-user {
+  &__btn {
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+      color: $white-light;
+    }
+  }
+}
+// end::Add User / Edit user

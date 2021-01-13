@@ -1,0 +1,83 @@
+<!-- include header -->
+<%- include('../layout/_header') %>
+<!-- /include header -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <a href="/" class="btn btn-outline-primary"><i class="fas fa-caret-left"></i>&nbsp;Back home</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Add User</h1>
+      <p class="text-muted text-small">Use the below form to create a new user</p>
+    </div>
+  </div>
+  <div class="row">
+    <!-- start:: add-user FORM -->
+    <form class="row g-3 add-user" id="add-user" action="/api/users" method="POST">
+      <!-- Firstname -->
+      <div class="col-md-6">
+        <label for="firstname" class="form-label">Firstname*</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="enter your firstname" />
+      </div>
+
+      <!-- Lastname -->
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">Lastname*</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="enter your lastname" />
+      </div>
+
+      <!-- Email -->
+      <div class="col-12">
+        <label for="email" class="form-label">Email*</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="enter yout email" />
+      </div>
+
+      <!-- Gender -->
+      <div class="col-12">
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-1 pt-0">Gender*</legend>
+          <div class="col-sm-11">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="male" value="male" />
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="female" />
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- Status -->
+      <div class="col-12">
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-1 pt-0">Status*</legend>
+          <div class="col-sm-11">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="status" id="active" value="active" />
+              <label class="form-check-label" for="active">Active</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="status" id="inactive" value="inactive" />
+              <label class="form-check-label" for="inactive">Inactive</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- Add-user btn -->
+      <div class="col-12 mb-4">
+        <button type="submit" class="btn w-100 add-user__btn">Add User</button>
+      </div>
+    </form>
+    <!-- end:: add-user FORM -->
+  </div>
+</div>
+
+<!-- include footer -->
+<%- include('../layout/_footer') %>
+<!-- /include footer -->

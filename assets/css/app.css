@@ -1,0 +1,22 @@
+/* 
+  * custom style
+  * author: { MILAN MILIC } 
+*/
+.navbar {
+  background-color: #4686da; }
+  .navbar__logo {
+    color: #fff; }
+    .navbar__logo:hover {
+      color: #e2e2e2; }
+
+.table td,
+.table th {
+  vertical-align: middle; }
+
+.add-user__btn,
+.edit-user__btn {
+  background-color: #4686da;
+  color: #fff; }
+  .add-user__btn:hover,
+  .edit-user__btn:hover {
+    color: #e2e2e2; }

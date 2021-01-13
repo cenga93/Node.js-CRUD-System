@@ -1,0 +1,29 @@
+<!-- include header -->
+<%- include('layout/_header') %>
+<!-- /include header -->
+
+<!-- Main Site -->
+<main class="site-main">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12">
+        <a href="/add-user" class="btn btn-outline-primary">Add User</a>
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-hover">
+        <thead class="table-light">
+          <%- include("layout/_thead") %>
+        </thead>
+        <tbody>
+          <%- include('layout/_user') %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('layout/_footer') %>
+<!-- /include footer -->
